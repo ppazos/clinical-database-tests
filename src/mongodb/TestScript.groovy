@@ -58,13 +58,33 @@ def ehr = db.ehrs.findOne() // http://docs.mongodb.org/manual/reference/method/d
 
 // Test imprime el EHR en XML
 XStream xstream = new XStream()
-println "ehr: "+ xstream.toXML(ehr)
+//println "ehr: "+ xstream.toXML(ehr)
 
 
 def ehr2 = db.ehrs.findOne(dateCreated: ehr.dateCreated)
 
-println "ehr2: "+ xstream.toXML(ehr2)
+//println "ehr2: "+ xstream.toXML(ehr2)
 
+
+// Agrego una composition al EHR
+ehr2.compositions << [
+                       category: 'event',
+                       composer: [
+                         firstName: 'Carlos',
+                         lastName: 'Gomez',
+                         idCode: 'asdfasdf',
+                         idType: 'RRHHID'
+                       ],
+                       context: [
+                         startTime: new Date(),
+                         location: 'Depto. de Emergencias'
+                       ]
+                     ]
+                     
+ehr2.compositions.save(ehr2.compositions)
+                     
+ehr = db.ehrs.findOne()
+println "ehr con composition: "+ xstream.toXML(ehr.compositions)
 
 // ===================================================
 // Elimina todos los EHRs
@@ -73,5 +93,4 @@ db.ehrs.remove([:])
 res = db.ehrs.find()
 
 res.each{ println it.getClass().toString() +" - "+ it.toString() } // com.mongodb.BasicDBObject
-
 
