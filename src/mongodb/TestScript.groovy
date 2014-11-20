@@ -1,8 +1,10 @@
 @Grab(group='com.gmongo', module='gmongo', version='1.3')
+@Grab(group='com.thoughtworks.xstream', module='xstream', version='1.4.7')
 
 import com.gmongo.GMongoClient
 import com.mongodb.MongoCredential
 import com.mongodb.ServerAddress
+import com.thoughtworks.xstream.XStream
 
 //def oid = new org.bson.types.ObjectId()
 //println oid // 5452fe259d41f01413f3068e
@@ -33,7 +35,7 @@ db.ehrs << [
              systemId: 'CABOLABS_OPENEHR_EHR',
              compositions: [],
              contribution: [],
-             subject: [
+             subject: [ /* Campo de EHR_STATUS puesto directamente dentro del EHR para simplificar */
                uid: java.util.UUID.randomUUID() as String,
                firstName: 'Pablo',
                lastName: 'Pazos',
@@ -43,9 +45,26 @@ db.ehrs << [
              ]
            ]
 
-def res = db.ehrs.find()
+
+// Todos los EHRs
+def res = db.ehrs.find() // http://docs.mongodb.org/manual/reference/method/db.collection.find/
 
 res.each{ println it.getClass().toString() +" - "+ it.toString() } // com.mongodb.BasicDBObject
+
+
+// Un EHR
+def ehr = db.ehrs.findOne() // http://docs.mongodb.org/manual/reference/method/db.collection.findOne/
+
+
+// Test imprime el EHR en XML
+XStream xstream = new XStream()
+println "ehr: "+ xstream.toXML(ehr)
+
+
+def ehr2 = db.ehrs.findOne(dateCreated: ehr.dateCreated)
+
+println "ehr2: "+ xstream.toXML(ehr2)
+
 
 // ===================================================
 // Elimina todos los EHRs
@@ -54,6 +73,5 @@ db.ehrs.remove([:])
 res = db.ehrs.find()
 
 res.each{ println it.getClass().toString() +" - "+ it.toString() } // com.mongodb.BasicDBObject
-
 
 

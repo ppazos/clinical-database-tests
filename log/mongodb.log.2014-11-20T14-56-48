@@ -1,0 +1,183 @@
+2014-10-30T22:48:40.042-0300 [initandlisten] MongoDB starting : pid=3524 port=27017 dbpath=C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb 32-bit host=virtual-trabajo
+2014-10-30T22:48:40.042-0300 [initandlisten] 
+2014-10-30T22:48:40.042-0300 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2014-10-30T22:48:40.042-0300 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2014-10-30T22:48:40.042-0300 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2014-10-30T22:48:40.042-0300 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2014-10-30T22:48:40.042-0300 [initandlisten] 
+2014-10-30T22:48:40.042-0300 [initandlisten] ** NOTE: your operating system version does not support the method that MongoDB
+2014-10-30T22:48:40.042-0300 [initandlisten] **       uses to detect impending page faults.
+2014-10-30T22:48:40.042-0300 [initandlisten] **       This may result in slower performance for certain use cases
+2014-10-30T22:48:40.042-0300 [initandlisten] 
+2014-10-30T22:48:40.042-0300 [initandlisten] targetMinOS: Windows XP SP3
+2014-10-30T22:48:40.042-0300 [initandlisten] db version v2.6.5
+2014-10-30T22:48:40.042-0300 [initandlisten] git version: e99d4fcb4279c0279796f237aa92fe3b64560bf6
+2014-10-30T22:48:40.042-0300 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2014-10-30T22:48:40.042-0300 [initandlisten] allocator: system
+2014-10-30T22:48:40.042-0300 [initandlisten] options: { net: { http: { RESTInterfaceEnabled: true, enabled: true } }, storage: { dbPath: "C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb" }, systemLog: { destination: "file", path: "C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\log\mongodb.log" } }
+2014-10-30T22:48:40.078-0300 [initandlisten] waiting for connections on port 27017
+2014-10-30T22:48:40.078-0300 [websvr] admin web console waiting for connections on port 28017
+2014-10-30T22:49:38.074-0300 [clientcursormon] mem (MB) res:46 virt:154
+2014-10-30T22:49:38.074-0300 [clientcursormon]  mapped:80
+2014-10-30T22:49:38.074-0300 [clientcursormon]  connections:0
+2014-10-30T22:52:48.640-0300 [initandlisten] connection accepted from 127.0.0.1:2950 #3 (1 connection now open)
+2014-10-30T22:54:47.133-0300 [clientcursormon] mem (MB) res:46 virt:155
+2014-10-30T22:54:47.133-0300 [clientcursormon]  mapped:80
+2014-10-30T22:54:47.133-0300 [clientcursormon]  connections:1
+2014-10-30T23:00:43.086-0300 [clientcursormon] mem (MB) res:46 virt:155
+2014-10-30T23:00:43.086-0300 [clientcursormon]  mapped:80
+2014-10-30T23:00:43.086-0300 [clientcursormon]  connections:1
+2014-10-30T23:03:33.654-0300 [conn3] allocating new ns file C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb\admin.ns, filling with zeroes...
+2014-10-30T23:03:33.779-0300 [FileAllocator] allocating new datafile C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb\admin.0, filling with zeroes...
+2014-10-30T23:03:33.779-0300 [FileAllocator] creating directory C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb\_tmp
+2014-10-30T23:03:33.779-0300 [FileAllocator] done allocating datafile C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb\admin.0, size: 64MB,  took 0 secs
+2014-10-30T23:03:33.779-0300 [conn3] build index on: admin.system.version properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2014-10-30T23:03:33.779-0300 [conn3] 	 added index to empty collection
+2014-10-30T23:03:33.779-0300 [conn3] update admin.system.version query: { _id: "authSchema" } update: { $set: { currentVersion: 3 } } nMatched:1 nModified:0 upsert:1 keyUpdates:0 numYields:0  125ms
+2014-10-30T23:03:33.779-0300 [conn3] build index on: admin.system.users properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "admin.system.users" }
+2014-10-30T23:03:33.779-0300 [conn3] 	 added index to empty collection
+2014-10-30T23:03:33.779-0300 [conn3] build index on: admin.system.users properties: { v: 1, unique: true, key: { user: 1, db: 1 }, name: "user_1_db_1", ns: "admin.system.users" }
+2014-10-30T23:03:33.779-0300 [conn3] 	 added index to empty collection
+2014-10-30T23:03:33.779-0300 [conn3] command admin.$cmd command: createUser { createUser: "user", pwd: "xxx", roles: [ "root" ], digestPassword: false, writeConcern: { w: "majority", wtimeout: 30000.0 } } keyUpdates:0 numYields:0  reslen:37 128ms
+2014-10-30T23:03:42.680-0300 [clientcursormon] mem (MB) res:50 virt:235
+2014-10-30T23:03:42.680-0300 [clientcursormon]  mapped:160
+2014-10-30T23:03:42.680-0300 [clientcursormon]  connections:1
+2014-10-30T23:05:08.337-0300 [conn3]  authenticate db: admin { authenticate: 1, nonce: "xxx", user: "user", key: "xxx" }
+2014-10-30T23:05:08.347-0300 [conn3] Failed to authenticate user@admin with mechanism MONGODB-CR: AuthenticationFailed key mismatch
+2014-10-30T23:05:30.249-0300 [conn3]  authenticate db: admin { authenticate: 1, nonce: "xxx", user: "user", key: "xxx" }
+2014-10-30T23:08:44.717-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:08:44.717-0300 [clientcursormon]  mapped:160
+2014-10-30T23:08:44.717-0300 [clientcursormon]  connections:1
+2014-10-30T23:13:44.872-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:13:44.872-0300 [clientcursormon]  mapped:160
+2014-10-30T23:13:44.872-0300 [clientcursormon]  connections:1
+2014-10-30T23:18:45.163-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:18:45.163-0300 [clientcursormon]  mapped:160
+2014-10-30T23:18:45.163-0300 [clientcursormon]  connections:1
+2014-10-30T23:23:46.082-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:23:46.082-0300 [clientcursormon]  mapped:160
+2014-10-30T23:23:46.082-0300 [clientcursormon]  connections:1
+2014-10-30T23:28:46.865-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:28:46.865-0300 [clientcursormon]  mapped:160
+2014-10-30T23:28:46.865-0300 [clientcursormon]  connections:1
+2014-10-30T23:33:47.841-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:33:47.841-0300 [clientcursormon]  mapped:160
+2014-10-30T23:33:47.841-0300 [clientcursormon]  connections:1
+2014-10-30T23:38:48.532-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:38:48.532-0300 [clientcursormon]  mapped:160
+2014-10-30T23:38:48.532-0300 [clientcursormon]  connections:1
+2014-10-30T23:43:48.974-0300 [clientcursormon] mem (MB) res:51 virt:235
+2014-10-30T23:43:48.974-0300 [clientcursormon]  mapped:160
+2014-10-30T23:43:48.974-0300 [clientcursormon]  connections:1
+2014-10-30T23:46:41.654-0300 [conn3] end connection 127.0.0.1:2950 (0 connections now open)
+2014-10-30T23:48:50.119-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-30T23:48:50.119-0300 [clientcursormon]  mapped:160
+2014-10-30T23:48:50.119-0300 [clientcursormon]  connections:0
+2014-10-30T23:53:50.571-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-30T23:53:50.571-0300 [clientcursormon]  mapped:160
+2014-10-30T23:53:50.571-0300 [clientcursormon]  connections:0
+2014-10-30T23:58:51.013-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-30T23:58:51.013-0300 [clientcursormon]  mapped:160
+2014-10-30T23:58:51.013-0300 [clientcursormon]  connections:0
+2014-10-31T00:03:51.455-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:03:51.455-0300 [clientcursormon]  mapped:160
+2014-10-31T00:03:51.455-0300 [clientcursormon]  connections:0
+2014-10-31T00:08:51.907-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:08:51.907-0300 [clientcursormon]  mapped:160
+2014-10-31T00:08:51.907-0300 [clientcursormon]  connections:0
+2014-10-31T00:13:52.349-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:13:52.349-0300 [clientcursormon]  mapped:160
+2014-10-31T00:13:52.349-0300 [clientcursormon]  connections:0
+2014-10-31T00:18:52.791-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:18:52.791-0300 [clientcursormon]  mapped:160
+2014-10-31T00:18:52.791-0300 [clientcursormon]  connections:0
+2014-10-31T00:23:53.233-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:23:53.233-0300 [clientcursormon]  mapped:160
+2014-10-31T00:23:53.233-0300 [clientcursormon]  connections:0
+2014-10-31T00:28:53.685-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:28:53.685-0300 [clientcursormon]  mapped:160
+2014-10-31T00:28:53.685-0300 [clientcursormon]  connections:0
+2014-10-31T00:33:54.127-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:33:54.127-0300 [clientcursormon]  mapped:160
+2014-10-31T00:33:54.127-0300 [clientcursormon]  connections:0
+2014-10-31T00:38:54.579-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:38:54.579-0300 [clientcursormon]  mapped:160
+2014-10-31T00:38:54.579-0300 [clientcursormon]  connections:0
+2014-10-31T00:43:55.011-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:43:55.011-0300 [clientcursormon]  mapped:160
+2014-10-31T00:43:55.011-0300 [clientcursormon]  connections:0
+2014-10-31T00:48:55.443-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:48:55.443-0300 [clientcursormon]  mapped:160
+2014-10-31T00:48:55.443-0300 [clientcursormon]  connections:0
+2014-10-31T00:53:55.885-0300 [clientcursormon] mem (MB) res:51 virt:234
+2014-10-31T00:53:55.885-0300 [clientcursormon]  mapped:160
+2014-10-31T00:53:55.885-0300 [clientcursormon]  connections:0
+2014-10-31T00:57:32.537-0300 [initandlisten] connection accepted from 127.0.0.1:4223 #4 (1 connection now open)
+2014-10-31T00:57:32.557-0300 [conn4]  authenticate db: mongo_database { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T00:57:32.557-0300 [conn4] Failed to authenticate user@mongo_database with mechanism MONGODB-CR: AuthenticationFailed UserNotFound Could not find user user@mongo_database
+2014-10-31T00:58:54.219-0300 [initandlisten] connection accepted from 127.0.0.1:4241 #5 (2 connections now open)
+2014-10-31T00:58:56.412-0300 [clientcursormon] mem (MB) res:51 virt:236
+2014-10-31T00:58:56.412-0300 [clientcursormon]  mapped:160
+2014-10-31T00:58:56.412-0300 [clientcursormon]  connections:2
+2014-10-31T00:59:27.046-0300 [initandlisten] connection accepted from 127.0.0.1:4248 #6 (3 connections now open)
+2014-10-31T00:59:27.046-0300 [conn6]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T00:59:27.046-0300 [conn6] Failed to authenticate user@openehr with mechanism MONGODB-CR: AuthenticationFailed UserNotFound Could not find user user@openehr
+2014-10-31T01:00:32.520-0300 [websvr] Socket recv() errno:10060 A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 127.0.0.1:4263
+2014-10-31T01:03:56.712-0300 [initandlisten] connection accepted from 127.0.0.1:4359 #61 (4 connections now open)
+2014-10-31T01:03:56.712-0300 [conn61]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:03:56.712-0300 [conn61] allocating new ns file C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb\openehr.ns, filling with zeroes...
+2014-10-31T01:03:56.819-0300 [FileAllocator] allocating new datafile C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb\openehr.0, filling with zeroes...
+2014-10-31T01:03:56.819-0300 [FileAllocator] done allocating datafile C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb\openehr.0, size: 64MB,  took 0 secs
+2014-10-31T01:03:56.819-0300 [conn61] build index on: openehr.ehrs properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "openehr.ehrs" }
+2014-10-31T01:03:56.819-0300 [conn61] 	 added index to empty collection
+2014-10-31T01:03:56.819-0300 [conn61] insert openehr.ehrs ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:131640 131ms
+2014-10-31T01:03:57.058-0300 [clientcursormon] mem (MB) res:55 virt:318
+2014-10-31T01:03:57.058-0300 [clientcursormon]  mapped:240
+2014-10-31T01:03:57.058-0300 [clientcursormon]  connections:4
+2014-10-31T01:04:24.058-0300 [initandlisten] connection accepted from 127.0.0.1:4366 #62 (5 connections now open)
+2014-10-31T01:04:24.069-0300 [conn62]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:04:44.712-0300 [initandlisten] connection accepted from 127.0.0.1:4373 #63 (6 connections now open)
+2014-10-31T01:04:44.722-0300 [conn63]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:05:11.351-0300 [initandlisten] connection accepted from 127.0.0.1:4378 #64 (7 connections now open)
+2014-10-31T01:05:11.351-0300 [conn64]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:06:02.034-0300 [initandlisten] connection accepted from 127.0.0.1:4391 #65 (8 connections now open)
+2014-10-31T01:06:02.047-0300 [conn65]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:06:27.142-0300 [initandlisten] connection accepted from 127.0.0.1:4398 #66 (9 connections now open)
+2014-10-31T01:06:27.153-0300 [conn66]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:06:48.310-0300 [initandlisten] connection accepted from 127.0.0.1:4403 #67 (10 connections now open)
+2014-10-31T01:06:48.319-0300 [conn67]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:09:56.112-0300 [clientcursormon] mem (MB) res:55 virt:324
+2014-10-31T01:09:56.112-0300 [clientcursormon]  mapped:240
+2014-10-31T01:09:56.112-0300 [clientcursormon]  connections:10
+2014-10-31T01:10:39.769-0300 [initandlisten] connection accepted from 127.0.0.1:4450 #68 (11 connections now open)
+2014-10-31T01:10:39.779-0300 [conn68]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:11:10.768-0300 [initandlisten] connection accepted from 127.0.0.1:4457 #69 (12 connections now open)
+2014-10-31T01:11:10.768-0300 [conn69]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:11:18.530-0300 [initandlisten] connection accepted from 127.0.0.1:4462 #70 (13 connections now open)
+2014-10-31T01:11:18.530-0300 [conn70]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:12:21.660-0300 [initandlisten] connection accepted from 127.0.0.1:4473 #71 (14 connections now open)
+2014-10-31T01:12:21.660-0300 [conn71]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-10-31T01:14:56.470-0300 [clientcursormon] mem (MB) res:55 virt:328
+2014-10-31T01:14:56.470-0300 [clientcursormon]  mapped:240
+2014-10-31T01:14:56.470-0300 [clientcursormon]  connections:14
+2014-10-31T01:16:27.855-0300 [conn5] end connection 127.0.0.1:4241 (13 connections now open)
+2014-10-31T01:20:53.110-0300 [clientcursormon] mem (MB) res:55 virt:327
+2014-10-31T01:20:53.110-0300 [clientcursormon]  mapped:240
+2014-10-31T01:20:53.110-0300 [clientcursormon]  connections:13
+2014-10-31T01:26:00.112-0300 [clientcursormon] mem (MB) res:55 virt:327
+2014-10-31T01:26:00.112-0300 [clientcursormon]  mapped:240
+2014-10-31T01:26:00.112-0300 [clientcursormon]  connections:13
+2014-10-31T01:30:54.976-0300 Ctrl-C signal
+2014-10-31T01:30:54.976-0300 [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2014-10-31T01:30:54.987-0300 [consoleTerminate] now exiting
+2014-10-31T01:30:54.987-0300 [consoleTerminate] dbexit: 
+2014-10-31T01:30:54.987-0300 [consoleTerminate] shutdown: going to close listening sockets...
+2014-10-31T01:30:54.987-0300 [consoleTerminate] closing listening socket: 1632
+2014-10-31T01:30:54.987-0300 [consoleTerminate] closing listening socket: 1740
+2014-10-31T01:30:54.987-0300 [consoleTerminate] shutdown: going to flush diaglog...
+2014-10-31T01:30:54.987-0300 [consoleTerminate] shutdown: going to close sockets...
+2014-10-31T01:30:54.987-0300 [consoleTerminate] shutdown: waiting for fs preallocator...
+2014-10-31T01:30:54.987-0300 [consoleTerminate] shutdown: closing all files...
+2014-10-31T01:30:54.987-0300 [consoleTerminate] closeAllFiles() finished
+2014-10-31T01:30:54.987-0300 [consoleTerminate] shutdown: removing fs lock...
+2014-10-31T01:30:54.987-0300 [consoleTerminate] dbexit: really exiting now
