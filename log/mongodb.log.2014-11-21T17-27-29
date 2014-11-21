@@ -1,0 +1,74 @@
+2014-11-20T13:45:31.752-0300 [initandlisten] MongoDB starting : pid=2916 port=27017 dbpath=C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb 32-bit host=virtual-trabajo
+2014-11-20T13:45:31.752-0300 [initandlisten] 
+2014-11-20T13:45:31.752-0300 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2014-11-20T13:45:31.752-0300 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2014-11-20T13:45:31.752-0300 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2014-11-20T13:45:31.752-0300 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2014-11-20T13:45:31.752-0300 [initandlisten] 
+2014-11-20T13:45:31.752-0300 [initandlisten] ** NOTE: your operating system version does not support the method that MongoDB
+2014-11-20T13:45:31.752-0300 [initandlisten] **       uses to detect impending page faults.
+2014-11-20T13:45:31.752-0300 [initandlisten] **       This may result in slower performance for certain use cases
+2014-11-20T13:45:31.752-0300 [initandlisten] 
+2014-11-20T13:45:31.752-0300 [initandlisten] targetMinOS: Windows XP SP3
+2014-11-20T13:45:31.752-0300 [initandlisten] db version v2.6.5
+2014-11-20T13:45:31.752-0300 [initandlisten] git version: e99d4fcb4279c0279796f237aa92fe3b64560bf6
+2014-11-20T13:45:31.752-0300 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2014-11-20T13:45:31.752-0300 [initandlisten] allocator: system
+2014-11-20T13:45:31.752-0300 [initandlisten] options: { net: { http: { RESTInterfaceEnabled: true, enabled: true } }, storage: { dbPath: "C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\data\mongodb" }, systemLog: { destination: "file", path: "C:\Documents and Settings\pab\My Documents\GitHub\clinical-database-tests\log\mongodb.log" } }
+2014-11-20T13:45:32.888-0300 [initandlisten] waiting for connections on port 27017
+2014-11-20T13:45:32.888-0300 [websvr] admin web console waiting for connections on port 28017
+2014-11-20T13:46:29.536-0300 [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 7ms
+2014-11-20T13:46:29.587-0300 [clientcursormon] mem (MB) res:78 virt:314
+2014-11-20T13:46:29.587-0300 [clientcursormon]  mapped:240
+2014-11-20T13:46:29.587-0300 [clientcursormon]  connections:0
+2014-11-20T13:51:29.146-0300 [clientcursormon] mem (MB) res:78 virt:314
+2014-11-20T13:51:29.146-0300 [clientcursormon]  mapped:240
+2014-11-20T13:51:29.146-0300 [clientcursormon]  connections:0
+2014-11-20T13:57:23.052-0300 [clientcursormon] mem (MB) res:78 virt:314
+2014-11-20T13:57:23.052-0300 [clientcursormon]  mapped:240
+2014-11-20T13:57:23.052-0300 [clientcursormon]  connections:0
+2014-11-20T14:01:20.601-0300 [DataFileSync] flushing mmaps took 14556ms  for 6 files
+2014-11-20T14:02:36.325-0300 [clientcursormon] mem (MB) res:78 virt:314
+2014-11-20T14:02:36.325-0300 [clientcursormon]  mapped:240
+2014-11-20T14:02:36.325-0300 [clientcursormon]  connections:0
+2014-11-20T14:04:50.513-0300 [initandlisten] connection accepted from 127.0.0.1:1589 #1 (1 connection now open)
+2014-11-20T14:04:50.528-0300 [conn1]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-11-20T14:07:38.617-0300 [clientcursormon] mem (MB) res:78 virt:315
+2014-11-20T14:07:38.617-0300 [clientcursormon]  mapped:240
+2014-11-20T14:07:38.617-0300 [clientcursormon]  connections:1
+2014-11-20T14:10:12.163-0300 [initandlisten] connection accepted from 127.0.0.1:1648 #2 (2 connections now open)
+2014-11-20T14:10:12.163-0300 [conn2]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-11-20T14:10:36.687-0300 [initandlisten] connection accepted from 127.0.0.1:1657 #3 (3 connections now open)
+2014-11-20T14:10:36.687-0300 [conn3]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-11-20T14:12:56.459-0300 [clientcursormon] mem (MB) res:79 virt:317
+2014-11-20T14:12:56.459-0300 [clientcursormon]  mapped:240
+2014-11-20T14:12:56.459-0300 [clientcursormon]  connections:3
+2014-11-20T14:14:11.816-0300 [initandlisten] connection accepted from 127.0.0.1:1698 #4 (4 connections now open)
+2014-11-20T14:14:11.816-0300 [conn4]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-11-20T14:16:33.349-0300 [initandlisten] connection accepted from 127.0.0.1:1730 #5 (5 connections now open)
+2014-11-20T14:16:33.349-0300 [conn5]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-11-20T14:18:47.282-0300 [clientcursormon] mem (MB) res:79 virt:319
+2014-11-20T14:18:47.282-0300 [clientcursormon]  mapped:240
+2014-11-20T14:18:47.282-0300 [clientcursormon]  connections:5
+2014-11-20T14:19:03.765-0300 [initandlisten] connection accepted from 127.0.0.1:1761 #6 (6 connections now open)
+2014-11-20T14:19:03.765-0300 [conn6]  authenticate db: openehr { authenticate: 1, user: "user", nonce: "xxx", key: "xxx" }
+2014-11-20T14:20:20.616-0300 [conn4] end connection 127.0.0.1:1698 (5 connections now open)
+2014-11-20T14:20:20.616-0300 [conn1] end connection 127.0.0.1:1589 (4 connections now open)
+2014-11-20T14:20:20.616-0300 [conn6] end connection 127.0.0.1:1761 (3 connections now open)
+2014-11-20T14:20:20.616-0300 [conn2] end connection 127.0.0.1:1648 (2 connections now open)
+2014-11-20T14:20:20.616-0300 [conn3] end connection 127.0.0.1:1657 (1 connection now open)
+2014-11-20T14:20:20.616-0300 [conn5] end connection 127.0.0.1:1730 (0 connections now open)
+2014-11-20T14:20:27.556-0300 Ctrl-C signal
+2014-11-20T14:20:27.556-0300 [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2014-11-20T14:20:27.556-0300 [consoleTerminate] now exiting
+2014-11-20T14:20:27.556-0300 [consoleTerminate] dbexit: 
+2014-11-20T14:20:27.556-0300 [consoleTerminate] shutdown: going to close listening sockets...
+2014-11-20T14:20:27.556-0300 [consoleTerminate] closing listening socket: 1604
+2014-11-20T14:20:27.556-0300 [consoleTerminate] closing listening socket: 1704
+2014-11-20T14:20:27.556-0300 [consoleTerminate] shutdown: going to flush diaglog...
+2014-11-20T14:20:27.556-0300 [consoleTerminate] shutdown: going to close sockets...
+2014-11-20T14:20:27.556-0300 [consoleTerminate] shutdown: waiting for fs preallocator...
+2014-11-20T14:20:27.556-0300 [consoleTerminate] shutdown: closing all files...
+2014-11-20T14:20:27.566-0300 [consoleTerminate] closeAllFiles() finished
+2014-11-20T14:20:27.566-0300 [consoleTerminate] shutdown: removing fs lock...
+2014-11-20T14:20:27.566-0300 [consoleTerminate] dbexit: really exiting now

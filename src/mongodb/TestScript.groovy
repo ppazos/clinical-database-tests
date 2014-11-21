@@ -34,7 +34,7 @@ db.ehrs << [
              dateCreated: new Date(),
              systemId: 'CABOLABS_OPENEHR_EHR',
              compositions: [],
-             contribution: [],
+             contributions: [],
              subject: [ /* Campo de EHR_STATUS puesto directamente dentro del EHR para simplificar */
                uid: java.util.UUID.randomUUID() as String,
                firstName: 'Pablo',
@@ -49,7 +49,7 @@ db.ehrs << [
 // Todos los EHRs
 def res = db.ehrs.find() // http://docs.mongodb.org/manual/reference/method/db.collection.find/
 
-res.each{ println it.getClass().toString() +" - "+ it.toString() } // com.mongodb.BasicDBObject
+res.each{ println groovy.json.JsonOutput.prettyPrint( it.toString() ) } // com.mongodb.BasicDBObject
 
 
 // Un EHR
@@ -65,9 +65,9 @@ def ehr2 = db.ehrs.findOne(dateCreated: ehr.dateCreated)
 
 //println "ehr2: "+ xstream.toXML(ehr2)
 
+def updatedCompos = ehr2.compositions
 
-// Agrego una composition al EHR
-ehr2.compositions << [
+updatedCompos << [
                        category: 'event',
                        composer: [
                          firstName: 'Carlos',
@@ -80,17 +80,21 @@ ehr2.compositions << [
                          location: 'Depto. de Emergencias'
                        ]
                      ]
+
+// Agrego una composition al EHR
+db.ehrs.update([_id: ehr2._id], [$set: [compositions:updatedCompos]], true) // upsert
+
+
                      
-ehr2.compositions.save(ehr2.compositions)
-                     
-ehr = db.ehrs.findOne()
-println "ehr con composition: "+ xstream.toXML(ehr.compositions)
+res = db.ehrs.find() // http://docs.mongodb.org/manual/reference/method/db.collection.find/
+res.each{ println groovy.json.JsonOutput.prettyPrint( it.toString() ) } // com.mongodb.BasicDBObject
+
 
 // ===================================================
 // Elimina todos los EHRs
 db.ehrs.remove([:])
 
-res = db.ehrs.find()
+//res = db.ehrs.find()
+//res.each{ println it.getClass().toString() +" - "+ it.toString() } // com.mongodb.BasicDBObject
 
-res.each{ println it.getClass().toString() +" - "+ it.toString() } // com.mongodb.BasicDBObject
 
